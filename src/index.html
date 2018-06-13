@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
-<body>
+<body class="is-loading">
+  <%= require('html-loader?interpolate!./partials/loader/loader.html') %>
   <%= require('html-loader?interpolate!./partials/header/header.html') %>
   <%= require('html-loader?interpolate!./partials/hero/hero.html') %>
   <%= require('html-loader?interpolate!./partials/main/main.html') %>

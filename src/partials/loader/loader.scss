@@ -1,0 +1,16 @@
+.#{$prefix}-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2099;
+  background-color: #ffffff;
+  transition: 0.5s 0.33s all ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  .is-loading & {
+    opacity: 1;
+    visibility: visible;
+  }
+}

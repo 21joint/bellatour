@@ -22,7 +22,7 @@ const buildSlides = function () {
           </div>
         </div>
       </div>`;
-  })
+  });
   return _slides;
 };
 

@@ -3,8 +3,10 @@
  */
 import jQuery from 'jquery';
 import './index.scss';
+import './partials/loader/loader';
 import './partials/hero/hero';
 import './partials/main/main';
+
 
 jQuery.extend(jQuery.easing, {
   easeNav(t) {
@@ -12,31 +14,33 @@ jQuery.extend(jQuery.easing, {
   }
 });
 
-
 jQuery(document).ready(function () {
-  $('body').scrollspy({
+  jQuery('body').scrollspy({
     target: '#mainNav',
-    offset: $('header').innerHeight()
+    offset: jQuery('header').innerHeight()
+  });
+  jQuery('a[href^="#"]').on('click', function (e) {
+    jQuery('html,body').animate({
+      scrollTop: (jQuery(jQuery(e.target).attr('href')).offset().top + 1) - jQuery('header').innerHeight()
+    })
   });
 });
 
-jQuery(window).on('resize', function () {
-  $('body').scrollspy('refresh');
-});
-
-jQuery('a[href^="#"]').on('click', function (e) {
-  jQuery('html,body').animate({
-    scrollTop: (jQuery(jQuery(e.target).attr('href')).offset().top + 1) - jQuery('header').innerHeight()
+jQuery(window)
+  .on('resize', function () {
+    jQuery('body').scrollspy('refresh');
   })
-});
-
-
-jQuery(window).on('scroll', function () {
-  var wS = $(window).scrollTop();
-  if (wS > 10) {
-    $('body').addClass('scrolled');
-  }
-  else {
-    $('body').removeClass('scrolled');
-  }
-});
+  .on('scroll', function () {
+    var wS = jQuery(window).scrollTop();
+    if (wS > 10) {
+      jQuery('body').addClass('scrolled');
+    }
+    else {
+      jQuery('body').removeClass('scrolled');
+    }
+  })
+  .on('load', function (e) {
+    jQuery('body').delay(1000).queue(function () {
+      jQuery(this).removeClass('is-loading');
+    });
+  });

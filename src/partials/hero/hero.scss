@@ -4,6 +4,18 @@
 .#{$prefix}-hero {
   position: relative;
   font-size: 14px;
+  .embed-responsive {
+    @include media-breakpoint-up(lg) {
+      max-height: 100vh;
+      overflow: hidden;
+      video {
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+      }
+    }
+  }
   &:before {
     content: '';
     position: absolute;
