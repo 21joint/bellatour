@@ -1,0 +1,24 @@
+{
+  "places": [
+    {
+      "title": "Tatev Monastery",
+      "description": "Tatev Monastery is located in South-East Armenia, in the area of ancient Armenian Syunik, not far from the city of Goris and 280 km away from Yerevan.",
+      "directions": "https://goo.gl/maps/oL4osCPQb2q"
+    },
+    {
+      "title": "Temple of Garni",
+      "description": "The Temple of Garni is the only standing Greco-Roman colonnaded building in Armenia and the former Soviet Union. An Ionic temple located in the village of Garni, Armenia, it is the best-known structure and symbol of pre-Christian Armenia.",
+      "directions": "https://goo.gl/maps/U8TjjyuRtC22"
+    },
+    {
+      "title": "Khor Virap",
+      "description": "The Khor Virap is an Armenian monastery located in the Ararat plain in Armenia, near the closed border with Turkey, about 8 kilometres south of Artashat, Ararat Province, within the territory of ancient Artaxata.",
+      "directions": "https://goo.gl/maps/VCXzVkStmru"
+    },
+    {
+      "title": "Haghartsin Monastery",
+      "description": "Haghartsin is a 13th-century monastery located near the town of Dilijan in the Tavush Province of Armenia. It was built between the 10th and 13th centuries; much of it under the patronage of the Bagratuni Dynasty.",
+      "directions": "https://goo.gl/maps/TbM1QxMqyHG2"
+    }
+  ]
+}

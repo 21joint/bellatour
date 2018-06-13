@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+  <%= require('html-loader?interpolate!./partials/header/header.html') %>
+  <%= require('html-loader?interpolate!./partials/hero/hero.html') %>
+  <%= require('html-loader?interpolate!./partials/main/main.html') %>
+</body>
+</html>
+
+

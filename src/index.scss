@@ -1,0 +1,11 @@
+@import "./assets/styles/variables";
+@import "~bootstrap/scss/bootstrap.scss";
+@import "./assets/styles/mixins";
+//HEADER
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@import "./partials/header/header";
+@import "./partials/hero/hero";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900");
