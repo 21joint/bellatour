@@ -1,3 +1,4 @@
+const pkg = require('./package');
 const path = require('path');
 const merge = require('webpack-merge');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -7,7 +8,7 @@ const PurifyCSSPlugin = require('purifycss-webpack');
 const glob = require('glob');
 
 
-const publicPath = args.git ? '' : '/';
+const publicPath = args.git ? '/' + pkg.name + '/' : '/';
 const dist = args.git ? 'docs' : 'dist';
 
 module.exports = merge(webpackConfig, {
