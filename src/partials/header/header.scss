@@ -58,4 +58,9 @@
     top: 50%;
     margin-top: -75px;
   }
+  &:hover {
+    .path-rounds {
+      transform: scale(1.2);
+    }
+  }
 }
