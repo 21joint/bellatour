@@ -39,13 +39,9 @@
 .#{$prefix}-logo {
   top: 0;
   left: 50%;
-  margin-left: -50px;
   z-index: 2100;
   transition: 0.2s all ease-in-out;
   will-change: top;
-  @include media-breakpoint-up(lg) {
-    margin-left: -75px;
-  }
   img, svg {
     width: 100px !important;
     height: 100px !important;
