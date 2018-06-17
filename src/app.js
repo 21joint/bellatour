@@ -2,6 +2,8 @@
  * Application entry point
  */
 import jQuery from 'jquery';
+import 'bootstrap/js/src/util';
+import 'bootstrap/js/src/collapse';
 import './index.scss';
 import './partials/loader/loader';
 import './partials/hero/hero';

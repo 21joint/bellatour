@@ -9,36 +9,51 @@
     background-color: rgba(0, 0, 0, 0.75);
   }
   li {
-    width: 150px;
+    @include media-breakpoint-up(lg) {
+      width: 150px;
+    }
   }
   a {
     color: #ffffff;
     padding: 0;
     &.active {
-      color: $blue;
+      text-decoration: none;
+      background: linear-gradient(73deg, rgba(0,203,231,1) 0%, #009CCB 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     &:not(.#{$prefix}-logo) {
       line-height: 150px;
+      font-weight: 300;
     }
     @include hover-focus-active {
       text-decoration: none;
-      color: $blue;
+      background: linear-gradient(73deg, rgba(0,203,231,1) 0%, #009CCB 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
     }
   }
 }
 
 .#{$prefix}-logo {
   top: 0;
-  position: fixed;
   left: 50%;
-  margin-left: -75px;
+  margin-left: -50px;
   z-index: 2100;
   transition: 0.2s all ease-in-out;
   will-change: top;
+  @include media-breakpoint-up(lg) {
+    margin-left: -75px;
+  }
   img, svg {
-    width: 150px !important;
-    height: 150px !important;
+    width: 100px !important;
+    height: 100px !important;
     display: block;
+    @include media-breakpoint-up(lg) {
+      width: 150px !important;
+      height: 150px !important;
+    }
   }
   .path-text {
     transition: 0.5s 0.2s all ease-in-out;
@@ -57,10 +72,5 @@
   .is-loading & {
     top: 50%;
     margin-top: -75px;
-  }
-  &:hover {
-    .path-rounds {
-      transform: scale(1.2);
-    }
   }
 }
