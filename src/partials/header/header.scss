@@ -42,10 +42,16 @@
   z-index: 2100;
   transition: 0.2s all ease-in-out;
   will-change: top;
+  position: relative;
+  margin-left: -50px;
+  @include media-breakpoint-up(lg) {
+    margin-left: -75px;
+  }
   img, svg {
     width: 100px !important;
     height: 100px !important;
     display: block;
+    margin: auto;
     @include media-breakpoint-up(lg) {
       width: 150px !important;
       height: 150px !important;
