@@ -38,23 +38,23 @@
 
 .#{$prefix}-logo {
   top: 0;
-  left: 50%;
+  //left: 50%;
   z-index: 2100;
   transition: 0.2s all ease-in-out;
   will-change: top;
   position: relative;
-  margin-left: -50px;
+  //margin-left: -50px;
   @include media-breakpoint-up(lg) {
-    margin-left: -75px;
+    //margin-left: -75px;
   }
   img, svg {
-    width: 100px !important;
+    width: auto !important;
     height: 100px !important;
     display: block;
     margin: auto;
     @include media-breakpoint-up(lg) {
-      width: 150px !important;
-      height: 150px !important;
+      width: auto !important;
+      height: 140px !important;
     }
   }
   .path-text {
