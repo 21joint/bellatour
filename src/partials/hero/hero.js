@@ -11,7 +11,7 @@ const buildSlides = function () {
         <div class="single-slide--description">
           <div class="container-fluid">
             <div class="row justify-content-center">
-              <div class=" col-12 col-sm-8 col-md-5">
+              <div class=" col-12 col-sm-10 col-lg-5">
                 <h1>${place.title}</h1>
                 <p>${place.description} </p>
                 <div class="p-2">

@@ -49,12 +49,12 @@
   }
   img, svg {
     width: auto !important;
-    height: 100px !important;
+    height: 80px !important;
     display: block;
     margin: auto;
     @include media-breakpoint-up(lg) {
       width: auto !important;
-      height: 140px !important;
+      height: 120px !important;
     }
   }
   .path-text {

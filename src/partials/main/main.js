@@ -6,7 +6,11 @@ import './main.scss';
 
 jQuery(window).on('load', function () {
   // vanilla JS
-  var msnry = new Masonry('.masonry', {
+  var msnry1 = new Masonry('#masonry1', {
+    itemSelector: '.grid-item',
+    horizontalOrder: true
+  });
+  var msnry2 = new Masonry('#masonry2', {
     itemSelector: '.grid-item',
     horizontalOrder: true
   });
