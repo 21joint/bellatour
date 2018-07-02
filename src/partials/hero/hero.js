@@ -17,10 +17,7 @@ const buildSlides = function () {
                 <div class="p-2">
                   <a role="button" href="${place.directions}" class="btn btn-primary" target="_blank">Get Directions</a>
                 </div>
-              </div>
-              Hey , thanks for considering me.
-
-So about my skills and the experience - it sounds like initially 
+              </div> 
             </div>
           </div>
         </div>

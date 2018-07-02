@@ -1,5 +1,5 @@
 .#{$prefix}-content--section {
-  min-height: 100vh;
+  padding: 50px 0;
   h2 {
     font-weight: 700;
   }
@@ -11,10 +11,9 @@
   }
 }
 
-
 .btn {
   &.btn-primary {
-    background: linear-gradient(73deg, rgba(0,203,231,1) 0%, #009CCB 100%);
+    background: linear-gradient(73deg, rgba(0, 203, 231, 1) 0%, #009CCB 100%);
     border-color: transparent;
   }
 }
